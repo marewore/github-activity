@@ -14,10 +14,6 @@ def print_events(events):
 
 
 def get_latest_events(username):
-    if not username:
-        print("Please provide a valid GitHub username.")
-        return
-
     url = f"https://api.github.com/users/{username}/events"
     headers = {
         'Accept': 'application/vnd.github+json'
